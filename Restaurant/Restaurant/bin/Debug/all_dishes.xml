@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDish xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Dish>
+    <Category>
+      <category>FirstCourses</category>
+    </Category>
+    <DishName>Борщ</DishName>
+    <Cost>600000</Cost>
+    <Time>600</Time>
+    <Cook>
+      <Name>Єгор</Name>
+      <Surname>Молчанов</Surname>
+    </Cook>
+  </Dish>
+</ArrayOfDish>

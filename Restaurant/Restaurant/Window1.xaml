@@ -1,0 +1,55 @@
+﻿<Window x:Class="Restaurant.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Restaurant"
+        mc:Ignorable="d"
+        Title="Редактор" Height="491" Width="490" Closing="Window_Closing">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="89*"/>
+            <RowDefinition Height="120*"/>
+            <RowDefinition Height="163*"/>
+            <RowDefinition Height="98.165"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/background.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Button x:Name="button_Save" Content="Зберегти" Margin="25,0,25,0" FontSize="20" FontWeight="Bold" Click="button_Save_Click" Grid.Row="3" Height="59" VerticalAlignment="Center">
+            <Button.Background>
+                <ImageBrush ImageSource="/button backgruond orange.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="button_Cancel" Content="Відмінити" Margin="25,0,25,0" FontSize="20" FontWeight="Bold" Click="button_Cancel_Click" Grid.Row="3" Grid.Column="1" Height="59" VerticalAlignment="Center">
+            <Button.Background>
+                <ImageBrush ImageSource="/button backgruond green.jpg"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label" Content="Категорія" Margin="14,0,121,0" FontWeight="Bold" Foreground="White" FontSize="20" Height="40" VerticalAlignment="Center"/>
+        <Label x:Name="label_Copy" Content="Кухар" Margin="14,23,155,0" FontWeight="Bold" Foreground="White" FontSize="20" Grid.Row="1" Height="41" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy1" Content="Страва" Margin="14,0,150,0" FontWeight="Bold" Foreground="White" FontSize="20" Grid.Row="2" Height="51" VerticalAlignment="Center"/>
+        <ComboBox x:Name="comboBox" Margin="165,0,25,0" Height="27" VerticalAlignment="Center" Grid.ColumnSpan="2" InputScope="Default" SelectionChanged="comboBox_SelectionChanged">
+            <ComboBoxItem Content="Холодні закуски"/>
+            <ComboBoxItem Content="Перші страви"/>
+            <ComboBoxItem Content="Другі страви"/>
+            <ComboBoxItem Content="Десерти"/>
+            <ComboBoxItem Content="Напої"/>
+        </ComboBox>
+        <TextBox x:Name="textBox" Margin="134,24,12,0" Grid.Row="1" TextWrapping="Wrap" Text="Ім'я" Height="24" VerticalAlignment="Top" Grid.ColumnSpan="2" />
+        <TextBox x:Name="textBox1" Margin="134,30,12,0" Grid.Row="2" TextWrapping="Wrap" Text="Назва" Height="25" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="textBox1_Copy" Margin="134,130,12,0" Grid.Row="2" Text="Вартість (в копійках)" Height="23" VerticalAlignment="Top" Grid.ColumnSpan="2" TextWrapping="Wrap"/>
+        <TextBox x:Name="textBox1_Copy1" Margin="134,81,12,0" Grid.Row="2" TextWrapping="Wrap" Text="Час виконання (в секундах)" Height="23" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="textBox_Copy" Margin="134,77,12,0" Grid.Row="1" TextWrapping="Wrap" Text="Прізвище" Height="24" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label x:Name="label_Copy2" Content="Ім'я" Margin="133,78,127,0" FontWeight="Bold" Foreground="White" Height="35" VerticalAlignment="Top" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+        <Label x:Name="label_Copy3" Content="Прізвище" Margin="134,48,127,0" FontWeight="Bold" Foreground="White" Height="29" VerticalAlignment="Top" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <Label x:Name="label_Copy4" Content="Назва страви" Margin="129,0,127,0" FontWeight="Bold" Foreground="White" Height="30" VerticalAlignment="Top" Grid.Row="2" Grid.ColumnSpan="2"/>
+        <Label x:Name="label_Copy5" Content="Час виконання (в секундах)" Margin="128,50,127,0" FontWeight="Bold" Foreground="White" Height="31" VerticalAlignment="Top" Grid.Row="2" Grid.ColumnSpan="2"/>
+        <Label x:Name="label_Copy6" Content="Вартість (в копійках)" Margin="129,99,127,0" FontWeight="Bold" Foreground="White" Height="31" VerticalAlignment="Top" Grid.Row="2" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
